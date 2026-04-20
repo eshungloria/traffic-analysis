@@ -33,13 +33,10 @@ Findings:
 
 
 
-\## TCP traffic Analysis
+## TCP Traffic Analysis
 
 
-
-!\[TCP Traffic](tcp-traffic.png)
-
-
+![TCP-Traffic](./tcp-traffic.png)
 
 Conclusions:
 
