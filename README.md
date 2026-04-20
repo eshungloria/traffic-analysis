@@ -1,52 +1,66 @@
-SOC PROJECT 1
+# SOC Project 1 — Network Traffic Analysis
 
-&#x20;Network Traffic Analysis
+## 📌 Overview
+This project focuses on analyzing network traffic using Wireshark to identify normal and potentially suspicious activity.
 
+## 🛠️ Tools Used
+- Wireshark  
+- Kali Linux  
 
+## 🎯 Objectives
+- Capture live network traffic  
+- Analyze protocols (DNS, TCP, ICMP)  
+- Identify suspicious patterns  
 
-I used Wireshark to capture and analyse network traffic.
+---
 
+## 🔍 Traffic Analysis Findings
 
+### DNS Traffic
+- Observed DNS queries to external domains (e.g., TikTok)
+- Traffic appeared normal
 
-Tools:
+### HTTPS Traffic (Port 443)
+- Encrypted traffic observed
+- No anomalies detected
 
-Wireshark
+### ICMP (Ping)
+- Normal echo requests and replies
+- No suspicious activity
 
-Kali Linux
+### TCP Traffic
+- Multiple TCP reset (RST) packets observed
+- Could indicate:
+  - connection interruptions  
+  - server-side resets  
+  - or network instability  
 
+---
 
+## 📸 Evidence
 
-What I did:
+### TCP Traffic Analysis
+![TCP Traffic](./tcp-traffic.png)
 
-* captured live traffic
-* checked DNS, TCP and ICMP packets
-* Identified normal and suspicious activity
+---
 
+## ⚠️ Analysis & Interpretation
+- Majority of traffic was legitimate  
+- TCP resets require monitoring but are not immediately malicious  
+- No clear indicators of compromise (IOC) found  
 
+---
 
-Findings:
+## 🧠 Skills Demonstrated
+- Network traffic analysis  
+- Protocol understanding (DNS, TCP, ICMP)  
+- Basic threat detection  
+- Wireshark usage  
 
-* DNS traffic to TikTok was normal
-* HTTPS traffic on port 443 was secure
-* ICMP (ping) traffic was normal
-* some TCP reset was (RST) packets were seen
+---
 
+## 📊 Conclusion
+This analysis shows how normal vs suspicious traffic can be identified using packet inspection tools.  
+Further monitoring is recommended for unusual TCP reset behavior.
 
-
-## TCP Traffic Analysis
-
-
-![TCP-Traffic](./tcp-traffic.png)
-
-Conclusions:
-
-Most traffic was normal, but some resets may need monitoring.
-
-
-
-Skills:
-
-* packet analysis
-* understanding protocols
-* basic threat detection
-
+---
